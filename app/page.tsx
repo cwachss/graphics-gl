@@ -79,9 +79,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="contact" className="h-[100vh] snap-start">
-        <form className="flex flex-col gap-4">
-          Contact Me
+      <section id="contact" className="h-[100vh] snap-start px-24 py-12 ">
+        <form className="flex flex-col gap-5">
+          <h3 className="text-3xl">Contact</h3>
           <input></input>
           <input></input>
           <textarea></textarea>
