@@ -1,21 +1,21 @@
-"use client";
+// "use client";s
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [offset, setOffset] = useState(0);
+  // const [offset, setOffset] = useState(0);
 
-  useEffect(() => {
-    const onScroll = () => setOffset(window.scrollY);
-    // clean up code
-    document.documentElement.style.setProperty(
-      "--scrollPosition",
-      window.scrollY + ""
-    );
-    window.removeEventListener("scroll", onScroll);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  // useEffect(() => {
+  //   const onScroll = () => setOffset(window.scrollY);
+  //   // clean up code
+  //   document.documentElement.style.setProperty(
+  //     "--scrollPosition",
+  //     window.scrollY + ""
+  //   );
+  //   window.removeEventListener("scroll", onScroll);
+  //   window.addEventListener("scroll", onScroll, { passive: true });
+  //   return () => window.removeEventListener("scroll", onScroll);
+  // }, []);
 
   return (
     <main className=" wrapper relative h-[100vh] w-full overflow-y-auto overflow-x-hidden scroll-smooth">
@@ -25,6 +25,14 @@ export default function Home() {
       >
         <h1 className=" text-5xl leading-tight">Design by Chani Wachsstock</h1>
         <h2 className="text-2xl">Freelance Graphic Design</h2>
+        <div className="flex gap-5 justify-center text-base uppercase">
+          <span>
+            <a href="#gallery">Gallery</a>
+          </span>
+          <span>
+            <a href="#contact">Contact</a>
+          </span>
+        </div>
         <div className="grid place-content-center pt-28 ">
           <svg
             width="54"
@@ -50,7 +58,9 @@ export default function Home() {
           Certified in graphic design through PS Design School.
         </p>
       </section> */}
-
+      <section id="parent" className="h-[100vh] snap-start px-24 py-12 ">
+        <div></div>
+      </section>
       <section id="gallery" className="h-[100vh] snap-start px-24 py-12 ">
         <div className=" ">
           <div className="flex flex-wrap gap-8 align-baseline pb-10 items-baseline">
@@ -65,7 +75,14 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 gap-8 items-center">
             <div className="grid grid-cols-3 gap-5 w-full *:rounded-md">
-              <div className=" bg-blue-200 text-gray-800 col-span-2 h-[250px]"></div>
+              <div className=" bg-blue-200 relative text-gray-800 col-span-2 h-[250px]">
+                <Image
+                  src="/samples/date_divider.png"
+                  layout="fill"
+                  alt="dividers"
+                  objectFit="cover"
+                ></Image>
+              </div>
               <div className=" bg-blue-200 text-gray-800 h-[250px]"></div>
               <div className=" bg-blue-200 text-gray-800 h-[250px]"></div>
               <div className=" bg-blue-200 text-gray-800 col-span-2 h-[250px]"></div>
@@ -79,14 +96,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="contact" className="h-[100vh] snap-start px-24 py-12 ">
+      {/* <section id="contact" className="h-[100vh] snap-start px-24 py-12 ">
         <form className="flex flex-col gap-5">
           <h3 className="text-3xl">Contact</h3>
           <input></input>
           <input></input>
           <textarea></textarea>
         </form>
-      </section>
+      </section> */}
       <div></div>
     </main>
   );
