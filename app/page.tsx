@@ -83,9 +83,30 @@ export default function Home() {
                   objectFit="cover"
                 ></Image>
               </div>
-              <div className=" bg-blue-200 text-gray-800 h-[250px]"></div>
-              <div className=" bg-blue-200 text-gray-800 h-[250px]"></div>
-              <div className=" bg-blue-200 text-gray-800 col-span-2 h-[250px]"></div>
+              <div className=" bg-blue-200 text-gray-800 h-[250px] relative">
+                <Image
+                  src="/samples/guide_book.png"
+                  layout="fill"
+                  alt="dividers"
+                  objectFit="cover"
+                ></Image>
+              </div>
+              <div className=" bg-blue-200 text-gray-800 h-[250px] relative">
+                <Image
+                  src="/samples/guide_book.png"
+                  layout="fill"
+                  alt="dividers"
+                  objectFit="cover"
+                ></Image>
+              </div>
+              <div className=" bg-blue-200 text-gray-800 col-span-2 h-[250px] relative">
+                <Image
+                  src="/samples/date_divider.png"
+                  layout="fill"
+                  alt="dividers"
+                  objectFit="cover"
+                ></Image>
+              </div>
             </div>
             <div className=" grid gap-5">
               <h4 className=" text-4xl">Layout Design</h4>
