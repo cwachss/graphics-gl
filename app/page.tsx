@@ -77,7 +77,7 @@ export default function Home() {
             <div className="grid grid-cols-3 gap-5 w-full *:rounded-md">
               <div className=" bg-blue-200 relative text-gray-800 col-span-2 h-[250px]">
                 <Image
-                  src="/samples/date_divider.png"
+                  src="/images/cooking_tours/date_divider.png"
                   layout="fill"
                   alt="dividers"
                   objectFit="cover"
@@ -85,7 +85,7 @@ export default function Home() {
               </div>
               <div className=" bg-blue-200 text-gray-800 h-[250px] relative">
                 <Image
-                  src="/samples/guide_book.png"
+                  src="/images/cooking_tours/guide_book.png"
                   layout="fill"
                   alt="dividers"
                   objectFit="cover"
@@ -93,7 +93,7 @@ export default function Home() {
               </div>
               <div className=" bg-blue-200 text-gray-800 h-[250px] relative">
                 <Image
-                  src="/samples/guide_book.png"
+                  src="/images/cooking_tours/recipes.png"
                   layout="fill"
                   alt="dividers"
                   objectFit="cover"
@@ -101,7 +101,7 @@ export default function Home() {
               </div>
               <div className=" bg-blue-200 text-gray-800 col-span-2 h-[250px] relative">
                 <Image
-                  src="/samples/date_divider.png"
+                  src="/images/cooking_tours/three_books.png"
                   layout="fill"
                   alt="dividers"
                   objectFit="cover"
