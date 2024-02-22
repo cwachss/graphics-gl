@@ -1,0 +1,62 @@
+{
+  "cookbooks": {
+    "title": "Cookbooks and Travel Guides",
+    "description": "Custom cookbooks and travel guides for Susie Fishbein's international cooking tours.",
+    "images": [
+      "/cooking_tours/date_divider.png",
+      "/cooking_tours/guide_book.png",
+      "/cooking_tours/recipes.png",
+      "/cooking_tours/three_books.png"
+    ]
+  },
+  "logos": {
+    "title": "Logos and Branding",
+    "description": "Full brand kits for a haircutting business, a small farmer's market, and a 50th birthday party.",
+    "images": [
+      "/cooking_tours/date_divider.png",
+      "/cooking_tours/guide_book.png",
+      "/cooking_tours/recipes.png",
+      "/cooking_tours/three_books.png"
+    ]
+  },
+  "book covers": {
+    "title": "Book Covers",
+    "description": "A modern and beautiful redesign idea for the cover for Living Inspired by R' Akiva Tatz.",
+    "images": [
+      "/cooking_tours/date_divider.png",
+      "/cooking_tours/guide_book.png",
+      "/cooking_tours/recipes.png",
+      "/cooking_tours/three_books.png"
+    ]
+  },
+  "packaging": {
+    "title": "Package Design",
+    "description": "Packaging redesign concept for Ken's Steak House Salad Dressing.",
+    "images": [
+      "/cooking_tours/date_divider.png",
+      "/cooking_tours/guide_book.png",
+      "/cooking_tours/recipes.png",
+      "/cooking_tours/three_books.png"
+    ]
+  },
+  "brochures": {
+    "title": "Brochures",
+    "description": "Classy and modern brochure design for Euroa Architecture and Home Design.",
+    "images": [
+      "/cooking_tours/date_divider.png",
+      "/cooking_tours/guide_book.png",
+      "/cooking_tours/recipes.png",
+      "/cooking_tours/three_books.png"
+    ]
+  },
+  "posters": {
+    "title": "Posters and Banners",
+    "description": "Informational and motivational banners and posters for Bais Yaakov of Waterbury's first day of school.",
+    "images": [
+      "/cooking_tours/date_divider.png",
+      "/cooking_tours/guide_book.png",
+      "/cooking_tours/recipes.png",
+      "/cooking_tours/three_books.png"
+    ]
+  }
+}
