@@ -19,18 +19,22 @@ export default function Home() {
       <div className="fixed -z-10 dark:[background:_linear-gradient(109.6deg,_rgb(36,_45,_57)_11.2%,_rgb(16,_37,_60)_51.2%,_rgb(0,_0,_0)_98.6%);] h-[100vh] w-full"></div>
       <header
         id="home"
-        className="h-[100vh] relative bg-white dark:bg-transparent dark:text-white grid p-6 place-content-center snap-start text-center gap-7"
+        className="h-[100vh] relative dark:opacity-75 bg-white dark:bg-transparent dark:text-white grid p-6 place-content-center text-center gap-7"
       >
-        <button
-          className="text-gray-700 dark:text-white right-6 top-6"
-          onClick={() => {
-            setDevMode((dev) => !dev);
-          }}
-        >
-          {devMode ? "return to designer mode" : "dev mode"}
-        </button>
-        <h1 className=" text-5xl leading-tight">Design by Chani Wachsstock</h1>
-        <h2 className="text-2xl">Freelance Graphic Design</h2>
+        <div className="grid place-content-center">
+          <button
+            className="text-gray-700 dark:text-white "
+            onClick={() => {
+              setDevMode((dev) => !dev);
+            }}
+          >
+            {devMode
+              ? "It's just like design mode, but darker."
+              : "switch to dev mode"}
+          </button>
+        </div>
+        <h1 className=" text-5xl leading-tight ">Design by Chani Wachsstock</h1>
+        <h2 className="text-2xl ">Freelance Graphic Design</h2>
         <ul className="flex gap-5 justify-center text-base uppercase">
           <li>
             <a href="#gallery">Gallery</a>
@@ -75,13 +79,15 @@ export default function Home() {
         className="h-[100vh] snap-start px-6 md:px-14 lg:px-24 py-12 dark:bg-transparent dark:text-white"
       >
         <div className=" ">
-          <div className="flex flex-wrap gap-8 align-baseline pb-10 items-baseline">
+          <div className="flex dark:opacity-75 flex-wrap gap-8 align-baseline pb-10 items-baseline">
             <h2 className="text-5xl">Gallery</h2>
             <ul className="flex flex-wrap gap-x-8 gap-y-4 text-base uppercase items-baseline">
               {tabs.map((tab) => (
                 <li
                   onClick={() => setGalleryTab(tab)}
-                  className={" capitalize animate-underline whitespace-nowrap"}
+                  className={
+                    " capitalize animate-underline whitespace-nowrap dark:*:after:opacity-100 "
+                  }
                 >
                   <a href={"#" + tab}>{tab}</a>
                 </li>
