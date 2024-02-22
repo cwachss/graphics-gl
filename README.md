@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## About
 
-.This is my WIP graphics portfolio + my css playground... we're going to be trying out parallax scroll effects and a few other hacky tricks, so stay tuned!
+This is my WIP graphics portfolio + my css playground... we're going to be trying out parallax scroll effects and a few other hacky tricks, so stay tuned!
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Montserrat, a custom Google Font.
 
