@@ -17,7 +17,7 @@
   }
 } */
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -25,7 +25,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
 @layer utilities {
   .text-balance {
@@ -33,16 +33,62 @@ body {
   }
 }
 
-li a {
-  overflow: hidden;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
+/* Layout */
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  margin: 0 2rem;
+}
+
+/* Underline styles */
+a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+
+/* Fade in */
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: hotpink;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+a:hover::after,
+a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+/* Scale from center */
 li a::after {
   opacity: 1;
-  transform: translate3d(-100%, 0, 0);
+  transform: scale(0);
+  transform-origin: center;
 }
 
 li a:hover::after,
 li a:focus::after {
-  transform: translate3d(0, 0, 0);
+  transform: scale(1);
 }

@@ -6,25 +6,39 @@ import galleryData from "./imageData.json";
 
 export default function Home() {
   const [galleryTab, setGalleryTab] = useState("cookbooks");
+  const [devMode, setDevMode] = useState(false);
 
   const tabs = Object.keys(galleryData);
 
   return (
-    <main className=" wrapper relative h-[100vh] w-full overflow-y-auto overflow-x-hidden scroll-smooth mb-6">
+    <main
+      className={`${
+        devMode ? "dark " : ""
+      } wrapper relative h-[100vh] w-full overflow-y-auto overflow-x-hidden scroll-smooth mb-6`}
+    >
+      <div className="fixed -z-10 dark:[background:_linear-gradient(109.6deg,_rgb(36,_45,_57)_11.2%,_rgb(16,_37,_60)_51.2%,_rgb(0,_0,_0)_98.6%);] h-[100vh] w-full"></div>
       <header
         id="home"
-        className="h-[100vh] bg-white grid p-6 place-content-center snap-start text-center gap-7"
+        className="h-[100vh] relative bg-white dark:bg-transparent dark:text-white grid p-6 place-content-center snap-start text-center gap-7"
       >
+        <button
+          className="text-gray-700 dark:text-white right-6 top-6"
+          onClick={() => {
+            setDevMode((dev) => !dev);
+          }}
+        >
+          {devMode ? "return to designer mode" : "dev mode"}
+        </button>
         <h1 className=" text-5xl leading-tight">Design by Chani Wachsstock</h1>
         <h2 className="text-2xl">Freelance Graphic Design</h2>
-        <div className="flex gap-5 justify-center text-base uppercase">
-          <span>
+        <ul className="flex gap-5 justify-center text-base uppercase">
+          <li>
             <a href="#gallery">Gallery</a>
-          </span>
-          <span>
+          </li>
+          <li>
             <a href="#contact">Contact</a>
-          </span>
-        </div>
+          </li>
+        </ul>
         <div className="grid place-content-center pt-28 ">
           <svg
             width="54"
@@ -35,7 +49,7 @@ export default function Home() {
           >
             <path
               d="M1.66745 1.25537L27.6963 30.2938M26.3421 30.2938L52.371 1.25537"
-              stroke="black"
+              stroke={devMode ? "white" : "black"}
               stroke-width="2"
             />
           </svg>
@@ -58,7 +72,7 @@ export default function Home() {
       </section> */}
       <section
         id="gallery"
-        className="h-[100vh] snap-start px-6 md:px-14 lg:px-24 py-12 "
+        className="h-[100vh] snap-start px-6 md:px-14 lg:px-24 py-12 dark:bg-transparent dark:text-white"
       >
         <div className=" ">
           <div className="flex flex-wrap gap-8 align-baseline pb-10 items-baseline">
@@ -90,13 +104,13 @@ export default function Home() {
         </form>
       </section> */}
       <div></div>
-      <footer className="grid place-content-center py-6 px-4">
-        <span>
+      <footer className="grid place-content-center py-6 px-4 dark:text-white">
+        <div className="flex gap-8">
           Contact me at:{" "}
           <a href="mailto:chaniwachsstock@gmail.com">
             chaniwachsstock@gmail.com
           </a>
-        </span>
+        </div>
       </footer>
     </main>
   );
