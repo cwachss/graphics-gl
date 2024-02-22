@@ -88,6 +88,7 @@ export default function Home() {
                   className={
                     " capitalize animate-underline whitespace-nowrap dark:*:after:opacity-100 "
                   }
+                  key={tab}
                 >
                   <a href={"#" + tab}>{tab}</a>
                 </li>
