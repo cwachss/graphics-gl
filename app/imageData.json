@@ -14,29 +14,29 @@
     "description": "Full brand kits for a haircutting business, a small farmer's market, and a 50th birthday party.",
     "images": [
       "/branding/clifton_branding.jpg",
-      "/cooking_tours/guide_book.png",
-      "/cooking_tours/recipes.png",
-      "/cooking_tours/three_books.png"
+      "/branding/clifton_branding.jpg",
+      "/branding/clifton_branding.jpg",
+      "/branding/clifton_branding.jpg"
     ]
   },
   "book covers": {
     "title": "Book Covers",
     "description": "A modern and beautiful redesign idea for the cover for Living Inspired by R' Akiva Tatz.",
     "images": [
-      "/cooking_tours/date_divider.png",
-      "/cooking_tours/guide_book.png",
-      "/cooking_tours/recipes.png",
-      "/cooking_tours/three_books.png"
+      "/book_covers/date_divider.png",
+      "/book_covers/guide_book.png",
+      "/book_covers/recipes.png",
+      "/book_covers/three_books.png"
     ]
   },
   "packaging": {
     "title": "Package Design",
     "description": "Packaging redesign concept for Ken's Steak House Salad Dressing.",
     "images": [
-      "/cooking_tours/date_divider.png",
-      "/cooking_tours/guide_book.png",
-      "/cooking_tours/recipes.png",
-      "/cooking_tours/three_books.png"
+      "/packaging/date_divider.png",
+      "/packaging/guide_book.png",
+      "/packaging/recipes.png",
+      "/packaging/three_books.png"
     ]
   },
   "brochures": {
@@ -44,19 +44,19 @@
     "description": "Classy and modern brochure design for Euroa Custom Home Design.",
     "images": [
       "/brochures/euroa_cover.jpg",
-      "/cooking_tours/guide_book.png",
-      "/cooking_tours/recipes.png",
-      "/cooking_tours/three_books.png"
+      "/brochures/euroa_cover.jpg",
+      "/brochures/euroa_cover.jpg",
+      "/brochures/euroa_cover.jpg"
     ]
   },
   "posters": {
     "title": "Posters and Banners",
     "description": "Informational and motivational banners and posters for Bais Yaakov of Waterbury's first day of school.",
     "images": [
-      "/cooking_tours/date_divider.png",
       "/posters/directory.jpg",
-      "/cooking_tours/recipes.png",
-      "/cooking_tours/three_books.png"
+      "/posters/directory.jpg",
+      "/posters/directory.jpg",
+      "/posters/directory.jpg"
     ]
   }
 }

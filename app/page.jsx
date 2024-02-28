@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image from "./Image";
 import ImageLayout from "./imageLayout.tsx";
 import { useState } from "react";
 import galleryData from "./imageData.json";
@@ -106,11 +106,15 @@ export default function Home() {
               ))}
             </ul>
           </div>
-          <ImageLayout
-            images={galleryData[galleryTab]?.images}
-            title={galleryData[galleryTab]?.title}
-            description={galleryData[galleryTab]?.description}
-          />
+          {Object.keys(galleryData).map((key) => (
+            <div className={key == galleryTab ? "" : "hidden"}>
+              <ImageLayout
+                images={galleryData[key]?.images}
+                title={galleryData[key]?.title}
+                description={galleryData[key]?.description}
+              />
+            </div>
+          ))}
         </div>
       </section>
       <section
@@ -126,18 +130,21 @@ export default function Home() {
                 src="/images/me/IMG_8871.jpg"
                 layout="fill"
                 objectFit="cover"
+                fallbackSrc=""
               />
             </div>
             <div>
               <h1 className="text-2xl lg:text-4xl text-balance my-6">
-                Hi, I'm Chani Wachsstock;
+                {"Hi, I'm Chani Wachsstock;"}
               </h1>
               <p className="text-balance">
                 Software developer, project manager, and freelance graphic
                 designer. <br />
-                Bachelor's in Computer Science from Thomas Edison University.{" "}
+                {
+                  "Bachelor's in Computer Science from Thomas Edison University."
+                }
                 <br />
-                Certified in graphic design through{" "}
+                {"Certified in graphic design through "}
                 <a
                   href="https://www.psdesignschool.com/"
                   target="_blank"
@@ -194,8 +201,9 @@ export default function Home() {
             </h5>
           </div>
           <p>
-            In my free time, I'm usually hiking, painting, dancing, teaching, or
-            tutoring in computer science (you can never have too many hobbies).
+            {
+              "In my free time, I'm usually hiking, painting, dancing, teaching, or tutoring in computer science (you can never have too many hobbies)."
+            }
           </p>
         </div>
       </section>
